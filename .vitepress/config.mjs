@@ -22,15 +22,31 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Introduction',
+        items: [
+          { text: 'What is Advanced Kanban?', link: '/introduction/what-is-advanced-kanban' },
+        ]
+      },
+      {
         text: 'Getting Started',
         items: [
           { text: '💰 Pricing & Licensing', link: '/pricing-licensing' },
           { text: '📦 Installation', link: '/installation' },
           { 
             text: 'Setup',
+            collapsed: true,
             items: [
               { text: 'Quick Start', link: '/quick-start' },
-              { text: 'Model Requirement', link: '/model-requirement' }
+              { text: 'Model Requirement', link: '/model-requirement' },
+              { text: 'MRR Kanban Setup', link: '/mrr-kanban-setup' }
+            ]
+          },
+          { 
+            text: '📚 API Reference',
+            collapsed: true,
+            items: [
+              { text: 'Kanban Class Options', link: '/api-reference/kanban-options' },
+              { text: 'KanbanColumn Options', link: '/api-reference/kanban-column-options' }
             ]
           },
           { 
