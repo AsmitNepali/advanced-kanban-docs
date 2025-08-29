@@ -11,8 +11,9 @@ hero:
       text: Pricing & Licensing
       link: /pricing-licensing
     - theme: alt
-      text: Installation
+      text: Get Started
       link: /installation
+  
 
 features:
   - title: Drag & Drop Interface

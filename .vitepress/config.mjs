@@ -37,10 +37,17 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Quick Start', link: '/quick-start' },
-              { text: 'Model Requirement', link: '/model-requirement' },
               { text: 'MRR Kanban Setup', link: '/mrr-kanban-setup' }
             ]
           },
+            {
+                text: 'Kanban',
+                collapsed: true,
+                items: [
+                    { text: 'Search', link: '/kanban/search' },
+                    { text: 'Filters', link: '/kanban/filters' },
+                    ],
+            },
           { 
             text: '📚 API Reference',
             collapsed: true,

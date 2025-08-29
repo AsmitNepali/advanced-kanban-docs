@@ -1,8 +1,10 @@
 
 # 🎯 Quick Start
-
+```bash 
+composer require asmit/advanced-kanban
+```
 ## 1. Create a Kanban Page
-
+To add a kanban board, create a new Filament page:
 ```bash
 php artisan make:filament-page TasksKanban
 ```
@@ -19,14 +21,13 @@ php artisan make:filament-page TasksKanban
 namespace App\Filament\Pages;
 
 use App\Models\Task;
+use Asmit\AdvancedKanban\Columns\KanbanColumn;
 use Asmit\AdvancedKanban\Pages\KanbanPage;
 use Asmit\AdvancedKanban\Kanban;
 
 class TasksKanban extends KanbanPage  // ← Must extend KanbanPage
 {
-    protected static ?string $navigationIcon = 'heroicon-o-view-columns';
-    protected static ?string $navigationLabel = 'Tasks Kanban';
-    protected static ?int $navigationSort = 1;
+    // Other properties like $navigationIcon, $navigationGroup, etc.
 
     public function kanban(Kanban $kanban): Kanban
     {
