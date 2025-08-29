@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  base: "/advanced-kanban-docs",
+  base: "/",
   title: " ",
   description: "A powerful and flexible premium Kanban board plugin for Filament 3.x that provides a complete drag-and-drop task management solution with advanced features like workflow transitions, pagination, search, filtering, and custom actions.",
   themeConfig: {
