@@ -1,5 +1,6 @@
 
 # 🎯 Quick Start
+Hsy, we donot want to waste your time. So here is a quick start guide to get you up and running with the Advanced Kanban package in Filament.
 ```bash 
 composer require asmit/advanced-kanban
 ```
@@ -9,7 +10,13 @@ To add a kanban board, create a new Filament page:
 php artisan make:filament-page TasksKanban
 ```
 
-## 2. Extend KanbanPage and Implement the Kanban Method
+## 2.Basic Configuration
+
+The package provide a quick and easy way to set up a kanban board in your Filament admin panel.
+It assumes that you have `title` and `description` fields in your kanban card.
+Initially it provides basic card design and functionality. Which include `title` and `description` fields.
+
+You can change these fields using `->titleField()` and `->descriptionField()` methods.
 
 **Important:** You must extend `KanbanPage` and provide the model and status field.
 

@@ -25,7 +25,7 @@ You can customize the search behavior by overriding the `applySearch` method in 
     use Illuminate\Database\Eloquent\Builder;
     
     public function kanban(Kanban $kanban): Kanban
-    {
+    {   
         return $kanban
             ->model(Task::class)
             ->statusField('status')

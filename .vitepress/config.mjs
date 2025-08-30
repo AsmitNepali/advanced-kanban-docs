@@ -46,7 +46,18 @@ export default defineConfig({
                 items: [
                     { text: 'Search', link: '/kanban/search' },
                     { text: 'Filters', link: '/kanban/filters' },
-                    ],
+                    {
+                        text: 'Columns',
+                        link: '/kanban/columns/overview',
+                        collapsed: true,
+                        items: [
+                            { text: 'Overview', link: '/kanban/columns/overview' },
+                            { text: 'Transitions', link: '/kanban/columns/transitions' },
+                            { text: 'Card Lock', link: '/kanban/columns/lock-card' },
+                        ]
+                    },
+                    { text: 'Actions', link: '/kanban/actions' },
+                ],
             },
           { 
             text: '📚 API Reference',
